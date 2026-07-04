@@ -87,7 +87,7 @@ export function Footer() {
         <div className="mt-8 flex flex-col gap-4">
 
           <a
-            href="https://vulpex.mx"
+            href="https://vulpexmx.web.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="

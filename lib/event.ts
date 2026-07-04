@@ -42,8 +42,8 @@ export const eventData = {
   venue: {
     name: "Salón Los Encinos",
     city: "Puebla, México",
-    address: "Av. Reforma 1234, Centro Histórico, 72000 Puebla, Pue.",
-    mapQuery: "Centro Histórico de Puebla, Puebla, México",
+    address: "Salvador Serrano, Xilotzingo, INFONAVIT Luis N. Morones, 72590 Heroica Puebla de Zaragoza, Pue.",
+    mapQuery: "INFONAVIT Luis N. Morones, Heroica Puebla de Zaragoza Puebla, México",
   },
 };
 
