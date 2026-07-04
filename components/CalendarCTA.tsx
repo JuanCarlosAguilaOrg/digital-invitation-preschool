@@ -75,7 +75,7 @@ export function CalendarCTA() {
                 fontFamily: "'Comic Sans MS','Fredoka',cursive",
               }}
             >
-              Nos encantará contar con tu compañía en este día tan especial.
+              Nos encantará contar con tu presencia en este día tan especial.
             </p>
           </motion.div>
 

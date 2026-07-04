@@ -4,6 +4,65 @@ import { motion } from "framer-motion";
 import { Reveal } from "./Reveal";
 import { eventData, type ProgramItem } from "@/lib/event";
 
+const colors = [
+  "text-red-500",
+  "text-orange-500",
+  "text-yellow-500",
+  "text-lime-500",
+  "text-green-500",
+  "text-cyan-500",
+  "text-sky-500",
+  "text-blue-500",
+  "text-purple-500",
+  "text-pink-500",
+];
+
+const rotations = [
+  "-rotate-3",
+  "rotate-2",
+  "-rotate-2",
+  "rotate-3",
+  "-rotate-1",
+  "rotate-2",
+  "-rotate-3",
+  "rotate-2",
+  "-rotate-2",
+  "rotate-3",
+];
+
+function MemoriesTitle() {
+  const word = "ITINERARIO";
+
+  return (
+    <div className="flex justify-center">
+      <h2
+        className="flex flex-wrap justify-center text-3xl md:text-4xl font-black uppercase tracking-wide"
+        style={{
+          fontFamily: "'Comic Sans MS','Fredoka','Baloo 2',cursive",
+        }}
+      >
+        {word.split("").map((letter, index) => (
+          <span
+            key={index}
+            className={`
+              inline-block
+              mx-[1px]
+              ${colors[index % colors.length]}
+              ${rotations[index % rotations.length]}
+              drop-shadow-[2px_2px_0_rgba(0,0,0,0.18)]
+              transition-transform duration-300
+              hover:scale-110
+            `}
+          >
+            {letter}
+          </span>
+        ))}
+      </h2>
+    </div>
+  );
+}
+
+
 const icons = {
   "map-pin": "📍",
   sparkles: "🎓",
@@ -145,32 +204,19 @@ export function Program() {
           viewport={{ once: true }}
           className="mx-auto mb-16 max-w-md text-center"
         >
-          <p
-            className="uppercase tracking-[0.35em] text-gray-800"
-            style={{
-              fontFamily: "'Comic Sans MS','Fredoka',cursive",
-            }}
-          >
-            ✏️ Itinerario 🎈
-          </p>
+          <MemoriesTitle />
 
-          <h2
-            className="mt-3 text-4xl font-black text-gray-800"
-            style={{
-              fontFamily: "'Comic Sans MS','Fredoka',cursive",
-            }}
-          >
-            Programa
-          </h2>
 
           <p
-            className="mt-3 text-gray-600"
+            className="mt-3 text-3xl text-gray-800"
             style={{
               fontFamily: "'Comic Sans MS','Fredoka',cursive",
             }}
           >
-            Acompáñanos durante esta hermosa ceremonia.
+             Acompáñanos durante esta hermosa ceremonia.
           </p>
+
+        
         </motion.div>
 
         {/* Timeline */}

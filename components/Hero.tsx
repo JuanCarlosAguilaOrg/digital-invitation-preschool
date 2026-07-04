@@ -75,7 +75,7 @@ function PreschoolTitle() {
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-white px-6 pt-32 pb-32">
+     <section className="relative overflow-hidden bg-white px-6 pt-44 pb-32">
 
       {/* Fondo tipo cuaderno */}
       <div className="absolute inset-0 bg-[repeating-linear-gradient(to_bottom,#ffffff_0px,#ffffff_32px,#dbeafe_33px)] opacity-90" />
@@ -95,8 +95,7 @@ export function Hero() {
       />
 
       {/* Contenido */}
-      <div className="relative z-30 mx-auto max-w-sm text-center">
-      {/*
+      <div className="relative z-30 mx-auto mt-10 max-w-sm text-center">      {/*
         <motion.p
           variants={fadeUp}
           initial="hidden"
@@ -136,12 +135,12 @@ export function Hero() {
           initial="hidden"
           animate="show"
           custom={0.5}
-          className="mt-2 text-3xl font-extrabold text-gray-800"
+           className="text-3xl font-extrabold text-gray-800"
           style={{
             fontFamily: "'Comic Sans MS', 'Fredoka', cursive",
           }}
         >
-          CEREMONIA DE GRADUACION
+          CEREMONIA DE FIN DE CURSO
         </motion.p>
 
         {/* Título multicolor */}
@@ -159,12 +158,13 @@ export function Hero() {
           initial="hidden"
           animate="show"
           custom={0.5}
-          className="mt-2 text-3xl font-extrabold text-gray-800"
+          className="mt-6 text-3xl font-extrabold text-gray-800"
+
           style={{
             fontFamily: "'Comic Sans MS', 'Fredoka', cursive",
           }}
         >
-          JARDIN DE NIÑOS JOSE VASCONCELOS
+          JARDÍN DE NIÑOS JOSÉ VASCONCELOS
         </motion.p>
 
         <motion.div

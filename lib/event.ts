@@ -2,7 +2,7 @@ export const eventData = {
   eyebrow: "Ceremonia de graduación",
   title: "Graduacion",
   titleAccent: "",
-  graduateName: "Generacion 2025 - 2026",
+  graduateName: "Generación 2025 - 2026",
   degree: "Jardin de Niños",
   institution: "Jose Vasconcelos",
   date: new Date("2026-07-07T10:00:00-13:00"),
@@ -21,15 +21,15 @@ export const eventData = {
   },
   {
     time: "2",
-    title: "Entrada de los alumnos egresados",
-    subtitle: "Ingreso de los alumnos de tercer grado al recinto.",
+    title: "Entrada de nuestros alumnos graduados",
+    subtitle: "Presentación de los alumnos de tercero A,B y C al recinto.",
     icon: "sparkles" as const,
   },
   {
     time: "3",
     title: "Demostración de habilidades",
     subtitle:
-      "Presentación artística dirigida por el maestro de música Omar Adorno Martínez.",
+      "Presentación artística por parte de los tercerlos grados, dirigida por el maestro de música Omar Adorno Martínez.",
     icon: "party-popper" as const,
   },
   {
@@ -56,18 +56,18 @@ export const eventData = {
   {
     time: "7",
     title: "Canto de despedida",
-    subtitle: "Interpretado por los alumnos de tercer grado.",
+    subtitle: "Interpretado por nuestros alumnos de tercer grado, A, B Y C.",
     icon: "party-popper" as const,
   },
   {
     time: "8",
     title: "Mensaje de despedida",
-    subtitle: "Palabras finales por las docentes de tercer grado.",
+    subtitle: "Palabras finales de agradecimiento por parte de las maestras titulares de los terceros grados.",
     icon: "sparkles" as const,
   },
 ],
   venue: {
-    name: "Jardin de Niños Jose Vasconcelos",
+    name: "Jardín de Niños José Vasconcelos",
     city: "Puebla, México",
     address: "Salvador Serrano, Xilotzingo, INFONAVIT Luis N. Morones, 72590 Heroica Puebla de Zaragoza, Pue.",
     mapQuery: "INFONAVIT Luis N. Morones, Heroica Puebla de Zaragoza Puebla, México",

@@ -45,15 +45,26 @@ export function Quote() {
             className="text-center"
           >
 
-            <p
-              className="uppercase tracking-[0.35em] text-green-600"
+            
+            
+            <h2
+              className="
+                mt-3
+                text-4xl
+                md:text-5xl
+                font-black
+                text-sky-500
+                tracking-wide
+                drop-shadow-[3px_3px_0_rgba(255,255,255,0.9)]
+                [text-shadow:_2px_2px_0_#ffffff,_4px_4px_0_rgba(0,0,0,0.15)]
+              "
               style={{
-                fontFamily: "'Comic Sans MS','Fredoka',cursive",
+                fontFamily: "'Comic Sans MS','Fredoka','Baloo 2',cursive",
               }}
             >
-              💖 para quienes han sido parte de este camino 💖
-            </p>
+            💖 Para quienes han sido parte de este camino 💖
 
+            </h2>
             <h2
               className="mt-3 text-4xl font-black text-gray-800"
               style={{

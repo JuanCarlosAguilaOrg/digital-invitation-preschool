@@ -6,6 +6,64 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Reveal } from "./Reveal";
 import { eventData } from "@/lib/event";
 
+const colors = [
+  "text-red-500",
+  "text-orange-500",
+  "text-yellow-500",
+  "text-lime-500",
+  "text-green-500",
+  "text-cyan-500",
+  "text-sky-500",
+  "text-blue-500",
+  "text-purple-500",
+  "text-pink-500",
+];
+
+const rotations = [
+  "-rotate-3",
+  "rotate-2",
+  "-rotate-2",
+  "rotate-3",
+  "-rotate-1",
+  "rotate-2",
+  "-rotate-3",
+  "rotate-2",
+  "-rotate-2",
+  "rotate-3",
+];
+
+function MemoriesTitle() {
+  const words = [
+    "RECUERDOS",
+    "DE",
+    "NUESTRA",
+    "GENERACIÓN",
+  ];
+
+  return (
+    <h2
+      className="flex flex-wrap justify-center gap-x-3 gap-y-2 text-3xl md:text-4xl font-black uppercase leading-tight"
+      style={{
+        fontFamily: "'Comic Sans MS','Fredoka','Baloo 2',cursive",
+      }}
+    >
+      {words.map((word, index) => (
+        <span
+          key={index}
+          className={`
+            inline-block
+            ${colors[index % colors.length]}
+            ${rotations[index % rotations.length]}
+            drop-shadow-[2px_2px_0_rgba(0,0,0,0.18)]
+          `}
+        >
+          {word}
+        </span>
+      ))}
+    </h2>
+  );
+}
+
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
   show: (delay = 0) => ({
@@ -71,23 +129,25 @@ export function Honoree() {
               viewport={{ once: true }}
               className="mb-12 text-center"
             >
-              <p
-                className="text-sm uppercase tracking-[0.35em] text-gray-800"
-                style={{
-                  fontFamily: "'Comic Sans MS','Fredoka',cursive",
-                }}
-              >
-                RECUERDOS DE NUESTRA GENERACIÓN
-              </p>
+              <MemoriesTitle />
 
               <h2
-                className="mt-3 text-4xl font-black text-gray-800"
-                style={{
-                  fontFamily: "'Comic Sans MS','Fredoka',cursive",
-                }}
-              >
-                Terceros Años
-              </h2>
+              className="
+                mt-3
+                text-4xl
+                md:text-5xl
+                font-black
+                text-sky-500
+                tracking-wide
+                drop-shadow-[3px_3px_0_rgba(255,255,255,0.9)]
+                [text-shadow:_2px_2px_0_#ffffff,_4px_4px_0_rgba(0,0,0,0.15)]
+              "
+              style={{
+                fontFamily: "'Comic Sans MS','Fredoka','Baloo 2',cursive",
+              }}
+            >
+              Terceros Años
+            </h2>
 
               <p
                 className="mt-3 text-lg text-gray-600"

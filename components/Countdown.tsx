@@ -77,7 +77,7 @@ export function Countdown({ target }: { target: Date }) {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-white px-6 pt-20 pb-52">
+    <section className="relative overflow-hidden bg-white px-6 pt-20 pb-40">
 
       {/* Fondo tipo cuaderno */}
 
@@ -114,8 +114,18 @@ export function Countdown({ target }: { target: Date }) {
                 fontFamily: "'Comic Sans MS','Fredoka',cursive",
               }}
             >
-              Cuenta Regresiva
+              Fecha: 07 de julio de 2026  
             </h2>
+
+            <h2
+              className="mt-3 text-4xl font-black text-gray-800"
+              style={{
+                fontFamily: "'Comic Sans MS','Fredoka',cursive",
+              }}
+            >
+              Hora: 10 a.m.  
+            </h2>
+            
 
             <p
               className="mt-3 text-gray-600"
@@ -130,20 +140,21 @@ export function Countdown({ target }: { target: Date }) {
 
           {/* Tarjeta del contador */}
 
-          <div
-            className="
-              relative
-              z-30
-              mt-12
-              rounded-[32px]
-              border-[4px]
-              border-yellow-300
-              bg-white/95
-              p-8
-              shadow-[0_20px_45px_rgba(0,0,0,.18)]
-              backdrop-blur-sm
-            "
-          >
+        <div
+        className="
+          relative
+          z-30
+          mt-12
+          mb-20
+          rounded-[32px]
+          border-[4px]
+          border-yellow-300
+          bg-white/95
+          p-8
+          shadow-[0_20px_45px_rgba(0,0,0,.18)]
+          backdrop-blur-sm
+        "
+      >
 
             {/* Chinchetas */}
 
