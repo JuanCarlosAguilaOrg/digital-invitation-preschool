@@ -51,7 +51,7 @@ export function Quote() {
                 fontFamily: "'Comic Sans MS','Fredoka',cursive",
               }}
             >
-              💖 Con mucho cariño 💖
+              💖 para quienes han sido parte de este camino 💖
             </p>
 
             <h2
@@ -60,7 +60,7 @@ export function Quote() {
                 fontFamily: "'Comic Sans MS','Fredoka',cursive",
               }}
             >
-              Unas Palabras
+              Un pedacito de mi corazón 💖
             </h2>
 
           </motion.div>
@@ -93,14 +93,14 @@ export function Quote() {
 
               <div className="mt-8 h-1 w-20 rounded-full bg-yellow-300 mx-auto" />
 
-              <p
-                className="mt-5 text-lg font-bold text-pink-500"
-                style={{
-                  fontFamily: "'Comic Sans MS','Fredoka',cursive",
-                }}
-              >
-                {eventData.quoteAuthor}
-              </p>
+                <p
+                  className="mt-5 text-lg font-bold text-pink-500"
+                  style={{
+                    fontFamily: "'Comic Sans MS','Fredoka',cursive",
+                  }}
+                >
+                  🎓 {eventData.quoteAuthor} 🎓
+                </p>
 
             </div>
 
