@@ -7,6 +7,7 @@ import { Venue } from "@/components/Venue";
 import { CalendarCTA } from "@/components/CalendarCTA";
 import { Footer } from "@/components/Footer";
 import { eventData } from "@/lib/event";
+import { MusicPlayer } from "@/components/MusicPlayer";
 
 export default function Home() {
   return (
@@ -15,6 +16,8 @@ export default function Home() {
           full-bleed en móvil — resuelve la limitación responsive
           del diseño original, que no tenía un tratamiento de desktop. */}
       <div className="w-full max-w-[480px] overflow-hidden bg-parchment shadow-card sm:rounded-[32px]">
+       <MusicPlayer />
+
         <Hero />
         <Countdown target={eventData.date} />
         <Quote />
